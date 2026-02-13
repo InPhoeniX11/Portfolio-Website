@@ -18,9 +18,11 @@ const FormikForm = () => {
     phoneNumber: 0,
     age: 0,
   };
+  
   let onSubmit = (value, other) => {
     console.log(value);
   };
+  
   let validationSchema = yup.object({
     firstName: yup.string().required("FirstName is required. "),
     lastName: yup.string().required("LastName is required. "),
